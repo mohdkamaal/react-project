@@ -2,9 +2,10 @@ import React from 'react';
 
 
 
-export const Person = () => {
+export const Person = (props) => {
     return <div>
-        <p> i'm  {Math.floor(Math.random() * 30)} year old. </p>
+        <p> i'm  {props.name} and i'm {props.age} year old. </p>
+
     </div>
 }
 
