@@ -1,13 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import Member from "./Folder/member";
+import {Person} from "./Folder/xyz";
 
-function App() {
-  return (
-<div className="App">
-  <h1>Hello... i'm React App</h1>
-  <p>comes from app.js file</p>
-</div>
-  );
+class App extends Component {
+  render() {
+    return <div className="App">
+      <Member />
+      <Person />
+      <Person />
+      <Person />
+      <Person />
+
+      </div>
+  }
 }
-
 export default App;
